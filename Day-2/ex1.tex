@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[top=1in, bottom=1in, inner=1.5in,outer=1in,headheight=0.3in,headsep=0.2in]{geometry}
+\usepackage{lipsum}
+% use * after command to remove numbering,but it removes from table of contents
+\begin{document}
+\tableofcontents
+
+\chapter{Introduction}
+\section{Background}
+\lipsum[1]
+\addcontentsline{toc}{section}{Background 2}
+\section{Statement of Problem}
+\lipsum[2]
+
+\chapter{Requirement}
+\section{Software}
+\subsection{Python}
+\lipsum[4]
+\begin{itemize}
+    \item[@] variables
+    \item control statements
+    \begin{enumerate}
+        \item if-else
+        \item elif
+    \end{enumerate}
+\end{itemize}
+\begin{enumerate}
+    \item item 1
+    \item item 2
+    \begin{itemize}
+        \item item 3
+        \item item 4
+        \begin{enumerate}
+            \item item 4
+            \item item 5
+        \end{enumerate}
+    \end{itemize}
+\end{enumerate}
+\begin{description}
+    \item[Note] \lipsum[4] 
+    \item[Remarks] \lipsum[5] 
+\end{description}
+
+\begin{enumerate}
+    \item item 1
+    \begin{itemize}
+        \item[!] item 2
+        \begin{description}
+            \item[Note] \lipsum[2] 
+        \end{description}
+    \end{itemize}
+    \item item x
+    \begin{itemize}
+        \item item y
+        \begin{description}
+            \item[remarks] \lipsum[2] 
+        \end{description}
+    \end{itemize}
+\end{enumerate}
+\subsection{JavaScript}
+\lipsum[5]
+
+\section{Hardware}
+\subsection{Laptop}
+\lipsum[3]
+
+\chapter{Deep Learning}
+\section{Artificial Neural Networks (ANNs)}
+\lipsum[2]
+\subsection{Perceptron}
+\lipsum[1]
+\subsubsection{Loss function}
+\lipsum[3]
+\subsection{Multi Layer Perceptron}
+\paragraph{\lipsum[4]}
+\subparagraph{\lipsum[5]}
+\section{Convolutional Neural Networks (CNNs)}
+\lipsum[2-4]
+\section{Recurrent Neural Networks (RNNs)}
+\lipsum[5]
+\end{document}
